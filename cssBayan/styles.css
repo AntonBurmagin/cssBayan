@@ -1,66 +1,91 @@
 p {
     color: black;
-    font-size: 30px;
+    font-size: 2.5em;
     font-weight: 900;
   }
 
-.p1 {
-    text-align: center;
-    color: black;
-    font-size: 25px;
+label {
+    color: rgb(56, 21, 21);
+    font-size: 2em;
     font-weight: 700;
+    cursor: pointer;
+    /* opacity: 0; */
   }
 
 div {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .div-inside {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 
-.div-inside i {
+i {
+    /* visibility: hidden; */
+    color:black;
+    float: right;
+    /* padding-inline-end: 5%; */
+}
+
+.plus {
     visibility: hidden;
 }
-
-.div-inside:hover i{
+label:hover .plus {
     visibility: visible;
 }
 
 .meme {
-    width: 500px;
-    height: height*(500/width);
+    opacity: 0;
+    width: 0;
+}
+
+form:hover label {
+    color: rgb(148, 139, 7);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+form:hover i {
+    visibility: visible;
+    align-content: end;
+}
+
+.div-inside:hover .meme {
+    transition: 0.2s;
+    opacity: 1;
+    width: 60%;
+    height: height*0.6;
     border: 1px solid #000000;
     display: block;
     margin: 0 auto;
 }
 
-.div-inside summary {
+input {
     list-style: none;
-    color: rgb(56, 21, 21);
-    font-size: 25px;
-    font-weight: 700;
 }
 
-.div-inside:hover summary {
-    list-style: none;
+#input-1:checked~.label-1 .meme-1,
+#input-2:checked~.label-2 .meme-2,
+#input-3:checked~.label-3 .meme-3,
+#input-4:checked~.label-4 .meme-4,
+#input-5:checked~.label-5 .meme-5 {
+    transition: 0.2s;
+    opacity: 1;
+    width: 60%;
+    height: height*0.6;
+    border: 1px solid #000000;
+    display: block;
+    margin: 0 auto;
+}
+
+#input-1:checked~.label-1,
+#input-2:checked~.label-2,
+#input-3:checked~.label-3,
+#input-4:checked~.label-4,
+#input-5:checked~.label-5 {
     color: rgb(148, 139, 7);
-    font-size: 25px;
+    font-size: 2em;
     font-weight: 700;
-}
-
-details img {
-    display: none;
-}
-
-details:hover img {
-    display: block;
-}
-
-details:hover {
-    display: block;
-    visibility: visible;
-    
 }
