@@ -1,0 +1,126 @@
+p {
+    color: black;
+    font-size: 2.5em;
+    font-weight: 900;
+  }
+
+label {
+    color: rgb(56, 21, 21);
+    font-size: 2em;
+    font-weight: 700;
+    cursor: pointer;
+ }
+
+div {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.div-inside {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+i {
+    opacity: 0;
+    color:black;
+    width: 0;
+}
+
+.box {
+    padding-left: 0%;
+    padding-right: 0%;
+    display: flex;
+}
+
+.meme {
+    opacity: 0;
+    width: 0;
+}
+
+form:hover label {
+    color: rgb(148, 139, 7);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.div-inside:hover .meme {
+    transition: 0.2s;
+    opacity: 1;
+    width: 60%;
+    height: height*0.6;
+    border: 0.2em solid #000000;
+    display: block;
+    margin: 0 auto;
+}
+
+input {
+    display: flex;
+    display: none;
+}
+
+#input-1:checked~.label-1 .meme-1,
+#input-2:checked~.label-2 .meme-2,
+#input-3:checked~.label-3 .meme-3,
+#input-4:checked~.label-4 .meme-4,
+#input-5:checked~.label-5 .meme-5 {
+    transition: 0.2s;
+    opacity: 1;
+    width: 60%;
+    height: height*0.6;
+    border: 0.2em solid #000000;
+    display: block;
+    margin: 0 auto;
+}
+
+#input-1:checked~.label-1,
+#input-2:checked~.label-2,
+#input-3:checked~.label-3,
+#input-4:checked~.label-4,
+#input-5:checked~.label-5 {
+    color: rgb(148, 139, 7);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+form:hover .plus {
+    transition: 0.2s;
+    opacity: 1;
+    width: 1em;
+}
+
+.exit {
+    visibility: hidden;
+}
+
+form:hover .exit {
+    transition: 0.2s;
+    visibility: visible;
+}
+
+input:checked~.label .plus  {
+    opacity: 0;
+    width: 0;
+}
+
+.plus {
+    margin-left: auto;
+}
+
+.div-inside:hover .plus {
+    opacity: 0;
+    width: 0;
+}
+
+input:checked~.label .exit  {
+    transition: 0.2s;
+    opacity: 1;
+    width: 1em;
+}
+
+
+.div-inside:hover .exit {
+    transition: 0.2s;
+    opacity: 1;
+    width: 1em;
+}
