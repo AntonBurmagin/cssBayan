@@ -1,0 +1,66 @@
+p {
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+.p1 {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+div {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.div-inside {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.div-inside i {
+    visibility: hidden;
+}
+
+.div-inside:hover i{
+    visibility: visible;
+}
+
+.meme {
+    width: 500px;
+    height: height*(500/width);
+    border: 1px solid #000000;
+    display: block;
+    margin: 0 auto;
+}
+
+.div-inside summary {
+    list-style: none;
+    color: rgb(56, 21, 21);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.div-inside:hover summary {
+    list-style: none;
+    color: rgb(148, 139, 7);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+details img {
+    display: none;
+}
+
+details:hover img {
+    display: block;
+}
+
+details:hover {
+    display: block;
+    visibility: visible;
+    
+}

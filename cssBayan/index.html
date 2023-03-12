@@ -7,23 +7,69 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/9d2963efca.js" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script>
+        var active=4;
+        function setActive() {
+            if(active === 4)
+            window.alert("dfadf");
+        }
+        function isActive($s) {
+            innerHTML="привет мир!";
+        }
+        function myFunction() {
+            var element = document.getElementById("myDIV");
+            element.classList.add("mystyle");
+        }
+        
+    </script>
 </head>
 <body>
-    <p1>CSS Bayan</p1>
-    <hr>
-    <text>Manager telling us we are family<br></text>
-    <img src="office.jpg">
-    <hr>
-    <text>He with you?<br></text>
-    <img src="DC family.jpg">
-    <hr>
-    <text>There's too many of them...<br></text>
-    <img src="star wars family.jpg">
-    <hr>
-    <text>What does the S stand for?<br></text>
-    <img src="super family.jpg">
-    <hr>
-    <text>Булочки с шоколадом великолепны<br></text>
-    <img src="choco buns.jpg">
+    <div>
+        <div class="div-inside">
+        <p>CSS Bayan</p>
+        <hr>
+        <details onclick="setActive()">
+            <summary>Manager telling us we are family 
+                <i class="fa-solid fa-square-plus"></i>
+                <i class="fa-solid fa-rectangle-xmark"></i>
+            </summary>
+            <img src="office.jpg" class ="meme">
+        </details>
+        <hr>
+        <details onclick="isActive(4);">
+            <summary>He with you? 
+                <i class="fa-solid fa-square-plus"></i>
+                <i class="fa-solid fa-rectangle-xmark"></i>
+            </summary>
+            <img src="DC family.jpg" class ="meme">
+        </details>
+        <hr>
+        <details>
+            <summary>There's too many of them... 
+                <i class="fa-solid fa-square-plus"></i>
+                <i class="fa-solid fa-rectangle-xmark"></i>
+            </summary>
+            <img src="star wars family.jpg" class ="meme">
+        </details>
+        <hr>
+        <details open="true">
+            <summary>What does the S stand for? 
+                <i class="fa-solid fa-square-plus"></i>
+                <i class="fa-solid fa-rectangle-xmark"></i>
+            </summary>
+            <img src="super family.jpg" class ="meme">
+        </details>
+        <hr>
+        <details>
+            <summary>Булочки с шоколадом великолепны 
+                <i class="fa-solid fa-square-plus"></i>
+                <i class="fa-solid fa-rectangle-xmark"></i>
+            </summary>
+            <img src="choco buns.jpg" class ="meme">
+        </details>
+        </div>
+    </div>
 </body>
 </html>
