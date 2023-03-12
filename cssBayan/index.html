@@ -9,21 +9,7 @@
     <script src='main.js'></script>
     <script src="https://kit.fontawesome.com/9d2963efca.js" crossorigin="anonymous"></script>
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <script>
-        var active=4;
-        function setActive() {
-            if(active === 4)
-            window.alert("dfadf");
-        }
-        function isActive($s) {
-            innerHTML="привет мир!";
-        }
-        function myFunction() {
-            var element = document.getElementById("myDIV");
-            element.classList.add("mystyle");
-        }
-        
-    </script>
+    <link rel="stylesheet" href="media.css" media="only screen and (max-width:1920px)">
 </head>
 <body>
     <div>
@@ -31,67 +17,64 @@
             <p>CSS Bayan</p>
             <div class="div-inside">
                 <input type="radio" id="input-1" name="name" checked>
-                <label for="input-1" class="label-1">
-                    Manager telling us we are family
-                    <i class="plus" class="fa-solid fa-square-plus" ></i>
-                    <i class="fa-solid fa-rectangle-xmark" class="exit"></i>
-                    <img src="office.jpg" class ="meme meme-1">
+                <label for="input-1" class="label label-1">
+                    <div class="box">
+                        Manager telling us we are family
+                        <i class="plus fa-solid fa-square-plus" ></i>
+                        <i class="exit fa-solid fa-rectangle-xmark"></i>
+                    </div>
+                    <img src="img/office.jpg" class ="meme meme-1">
                 </label>
                 <hr>
             </div>
             <div class="div-inside">
                 <input type="radio" id="input-2" name="name">
-                <label for="input-2" class="label-2">He with you?
-                    <i class="fa-solid fa-square-plus"></i>
-                    <i class="fa-solid fa-rectangle-xmark"></i>
-                    <img src="DC family.jpg" class ="meme meme-2">
+                <label for="input-2" class="label label-2">
+                    <div class="box">
+                        He with you?
+                        <i class="plus fa-solid fa-square-plus" ></i>
+                        <i class="exit fa-solid fa-rectangle-xmark"></i>
+                    </div>
+                    <img src="img/DC family.jpg" class ="meme meme-2">
                 </label>
                 <hr>
             </div>
+            <div class="div-inside">
+                <input type="radio" id="input-3" name="name">
+                <label for="input-3" class="label label-3">
+                    <div class="box">
+                        There's too many of them...
+                        <i class="plus fa-solid fa-square-plus" ></i>
+                        <i class="exit fa-solid fa-rectangle-xmark"></i>
+                    </div>
+                    <img src="img/star wars family.jpg" class ="meme meme-3">
+                </label>
+                <hr>
+            </div>
+            <div class="div-inside">
+                <input type="radio" id="input-4" name="name">
+                <label for="input-4" class="label label-4">
+                    <div class="box">
+                        What does the S stand for?
+                        <i class="plus fa-solid fa-square-plus" ></i>
+                        <i class="exit fa-solid fa-rectangle-xmark"></i>
+                    </div>
+                    <img src="img/super family.jpg" class ="meme meme-4">
+                </label>
+                <hr>
+            </div>
+            <div class="div-inside">
+                <input type="radio" id="input-5" name="name">
+                <label for="input-5" class="label label-5">
+                    <div class="box">
+                        Булочки с шоколадом великолепны
+                        <i class="plus fa-solid fa-square-plus" ></i>
+                        <i class="exit fa-solid fa-rectangle-xmark"></i>
+                    </div>
+                    <img src="img/choco buns.jpg" class ="meme meme-5">
+                </label>
+            </div>
         </form>
-        <!-- <div class="div-inside">
-        <p>CSS Bayan</p>
-        <hr>
-        <details onclick="setActive()">
-            <summary>Manager telling us we are family 
-                <i class="fa-solid fa-square-plus"></i>
-                <i class="fa-solid fa-rectangle-xmark"></i>
-            </summary>
-            <img src="office.jpg" class ="meme">
-        </details>
-        <hr>
-        <details onclick="isActive(4);">
-            <summary>He with you? 
-                <i class="fa-solid fa-square-plus"></i>
-                <i class="fa-solid fa-rectangle-xmark"></i>
-            </summary>
-            <img src="DC family.jpg" class ="meme">
-        </details>
-        <hr>
-        <details>
-            <summary>There's too many of them... 
-                <i class="fa-solid fa-square-plus"></i>
-                <i class="fa-solid fa-rectangle-xmark"></i>
-            </summary>
-            <img src="star wars family.jpg" class ="meme">
-        </details>
-        <hr>
-        <details open="true">
-            <summary>What does the S stand for? 
-                <i class="fa-solid fa-square-plus"></i>
-                <i class="fa-solid fa-rectangle-xmark"></i>
-            </summary>
-            <img src="super family.jpg" class ="meme">
-        </details>
-        <hr>
-        <details>
-            <summary>Булочки с шоколадом великолепны 
-                <i class="fa-solid fa-square-plus"></i>
-                <i class="fa-solid fa-rectangle-xmark"></i>
-            </summary>
-            <img src="choco buns.jpg" class ="meme">
-        </details>
-        </div> -->
     </div>
 </body>
 </html>
